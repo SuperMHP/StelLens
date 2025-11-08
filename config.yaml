@@ -1,0 +1,12 @@
+input_dir: './input_data/301_1458_4_700'    
+save_dir: './output'
+fast_reproject: 'True'
+metadata:  #target near space restoration setting
+    ratio_k: 4
+    exptime: 300.0
+    filter: 'F625W'
+    instrument_name: 'ACS/WFC'
+    PHOTOPLAM: None
+    PHOTOFLAM: None
+vis:
+    mode: 'percentile'
