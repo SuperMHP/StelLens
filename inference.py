@@ -97,7 +97,7 @@ if __name__ == "__main__":
     # 3. Combine and save
     hdul = fits.HDUList([hdu_primary, hdu_error])
     os.makedirs(cfg['save_dir'])
-    hdul.writeto(os.path.join(cfg['save_dir'],'/output_StelLens.fits'), overwrite=True)
+    hdul.writeto(os.path.join(cfg['save_dir'],'output_StelLens.fits'), overwrite=True)
     print('   Saved')
     # 4. visualize
-    pred_vis(final_output, savefir=cfg['save_dir'], mode=cfg['vis']['mode'])
+    pred_vis(final_output, save_dir=cfg['save_dir'], mode=cfg['vis']['mode'])

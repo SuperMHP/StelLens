@@ -406,7 +406,7 @@ class Deep_Space(data.Dataset):
             print("   \033[31mDo not have accurate FLAM and PLAM for unit converse (nanomaggy to counts/sec).\033[0m")
             print("   \033[43mUse the average FLAM and PLAM of the corresponding device and filter\033[0m")
             print("   \033[43mThe original nanomaggy is more accurate\033[0m")
-            photopara = np.load('../metadata/FLAM_PLAM.npy', allow_pickle=True).tolist()
+            photopara = np.load('./metadata/FLAM_PLAM.npy', allow_pickle=True).tolist()
             self.metadata['PHOTOFLAM'], self.metadata['PHOTOPLAM'] = photopara[self.metadata['instrument_name'].replace('/','_')][self.metadata['filter']]
         ## decode value
         # denormlize value: (v_hst*c2n*s2t_ratio-mean_hst)/std_hst-->v_hst*c2n 
