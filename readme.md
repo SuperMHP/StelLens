@@ -2,7 +2,7 @@
 
 This is the official repository for the StelLens paper:
 
-<Imaging physics-driven artificial intelligence makes ground-based telescope resolve deep field universe><https://www.researchsquare.com/article/rs-8068579/v1>
+[Imaging physics-driven artificial intelligence makes ground-based telescope resolve deep field universe](https://www.researchsquare.com/article/rs-8068579/v1)
 
 Resources include a pre-trained model and inference code are released here.
 
