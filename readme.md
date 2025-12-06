@@ -99,8 +99,11 @@ Controls the visualization mode used for inspecting output results.
 
 ###### Tips (Conflict check)
 
-In `./metadata/others`, there are two files showing the RA/DEC coordinates of training and test samples, respectively. Users can provide test samples freely, but it is recommended that they be at least 10 arcminutes away from any training sample to training avoid information leakage.
+In `./metadata/others`, several files provide exact training and testing data details. 
 
+  `'train_ra_dec.txt'` and `'test_ra_dec.txt'` show the RA/DEC coordinates of training and test samples, respectively. Users can provide test samples freely, but it is recommended that they be at least 10 arcminutes away from any training sample to avoid information leakage.
+
+  `'training.csv'` and `'evaluation.csv'` further show corresponding matched HST and SDSS sample observation IDs for training and testing, respectively. `'sdss.csv'` and `'hst.csv'` provide downloading URLs for each ID.  
 
 #### Inference
 
